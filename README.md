@@ -31,11 +31,13 @@ The headline metric is an over-representation ratio: Claude's share of total usa
 - **O\*NET Job Zones**: U.S. Department of Labor, Employment and Training Administration. Public resource.
 - **March 2026 Learning Curves report** (referenced, not used directly): Massenkoff, M., Lyubich, E., McCrory, P., Appel, R., & Heller, R. (2026). [*Anthropic Economic Index report: Learning curves.*](https://www.anthropic.com/research/economic-index-march-2026-report)
 
-## What this is and isn't
+## What this analysis covers
 
-This is a descriptive replication with a narrow extension. It is not a novel econometric study — task-occupation mappings are many-to-many, O\*NET Job Zones approximate rather than measure worker education, and the Economic Index sample covers Claude.ai consumer traffic only. The analysis is designed to make the adoption-by-education-level pattern legible and to motivate follow-up work, not to settle causal questions.
+This is a descriptive replication with a narrow extension. The goal is to make the adoption-by-education-level pattern legible and to motivate follow-up work.
 
-The notebook's final section lists specific extensions that would sharpen the analysis — including running it on the March 2026 release, implementing a task-share division approach to the many-to-many problem, and weighting by BLS employment data.
+Three limits to flag upfront. ONET task-occupation mappings are many-to-many, which affects how raw conversation shares aggregate across zones. ONET Job Zones approximate occupational preparation requirements rather than individual worker education. The Economic Index sample covers Claude.ai consumer traffic only, so enterprise API usage and non-Claude AI tools are out of scope. None of these are fatal, but they shape what the analysis can and can't say — the patterns here are consistent with causal stories but don't settle them.
+
+The notebook's final section lists specific extensions: running the same analysis on the March 2026 release, implementing a task-share division approach to the many-to-many problem, and weighting by BLS employment data.
 
 ## License
 
